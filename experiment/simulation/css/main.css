@@ -2,96 +2,96 @@
 
 .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .message {
     text-align: center;
     background-color: yellow;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 #bench {
-    z-index: -10rem;
+    z-index: -10em;
     position: absolute;
     align-self: center; 
     object-fit: cover;
-    top: 21rem;
-    width: 78rem;
-    left: 10rem;
+    top: 21em;
+    width: 78em;
+    left: 10em;
 }
 
 #water {
     opacity: 0.5;
     position: absolute;
-    top: 17.6rem;
-    height: 4rem;
-    width: 4rem; 
-    left: 33.2rem; 
+    top: 17.6em;
+    height: 4em;
+    width: 4em; 
+    left: 33.2em; 
     background-color: #add8e6;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 1em 1em;
 }
 
 #top-beaker {
     position: absolute;
     object-fit: cover;
     opacity: 0.4;
-    top: 16rem;
-    left: 32rem;
-    height: 6rem; 
+    top: 16em;
+    left: 32em;
+    height: 6em; 
 }
 
 #salt {
     position: absolute;
     object-fit: cover; 
-    top: 12rem;
-    left: 32rem; 
-    height: 4rem;
+    top: 12em;
+    left: 32em; 
+    height: 4em;
     opacity: 0;
 }
 
 #fecl3-spoon {
     position: absolute;
     object-fit: cover;
-    left:42rem;
-    top: 18rem; 
-    height: 3rem;
+    left:42em;
+    top: 18em; 
+    height: 3em;
     opacity: 0;
 }
 
 #pipette {
-    z-index: 1rem;
+    z-index: 1em;
     position: absolute;
     object-fit: cover;
-    top: 11rem;
-    left: 48rem; 
-    height: 13rem;
+    top: 11em;
+    left: 48em; 
+    height: 13em;
     opacity: 0;
 }
 
 #water-flask {
     height: 0px;
-    width: 3rem;
+    width: 3em;
     opacity: 0;
-    border-bottom: 2.9rem solid red;
-    border-left: 0.75rem solid transparent;
-    border-right: 0.8rem solid transparent;
+    border-bottom: 2.9em solid red;
+    border-left: 0.75em solid transparent;
+    border-right: 0.8em solid transparent;
     border-radius: 0% 0% 30% 30%;
     position: absolute;
-    left: 67.5rem;
-    top: 14.8rem;
+    left: 67.5em;
+    top: 14.8em;
 }
 
 #bead {
     opacity: 0;
     position: absolute;
-    width: 1.18rem;
-    height: 0.4rem;
-    border-radius: 1rem;
+    width: 1.18em;
+    height: 0.4em;
+    border-radius: 1em;
     object-fit: cover;
-    left: 68.4rem;
-    top: 12rem;
+    left: 68.4em;
+    top: 12em;
     background-color: black;
     transform-origin: 50% 50%;
 }
@@ -99,97 +99,97 @@
 #conicalflask {
     position: absolute;
     object-fit: cover;
-    left: 67rem; 
-    top: 12rem; 
-    height: 6rem; 
+    left: 67em; 
+    top: 12em; 
+    height: 6em; 
     opacity: 0;
 }
 
 #final-drop {
     opacity: 0;
     position: absolute;
-    width: 0.4rem;
-    height: 0.5rem;
+    width: 0.4em;
+    height: 0.5em;
     border-radius: 50% 50% 50% 50%;
     object-fit: cover;
-    left: 68.8rem;
-    top: 14.6rem;
+    left: 68.8em;
+    top: 14.6em;
     background-color: #FF8C00;
     transform-origin: 50% 50%;
 }
 
 #flask {
-    z-index: 1rem; 
+    z-index: 1em; 
     position: absolute;
     object-fit: cover;
     opacity: 0.4;
-    height: 6rem; 
-    top: 26.6rem; 
-    left: 36rem ;
+    height: 6em; 
+    top: 26.6em; 
+    left: 36em ;
     opacity: 0;
 }
 
 #water-main-beaker {
-    z-index: 1rem;
+    z-index: 1em;
     background-color: #add8e6; 
     opacity: 0; 
     position: absolute; 
-    height: 4rem; 
-    width: 4rem; 
-    top:28.2rem; 
-    left: 37.2rem; 
-    border-radius: 0 0 1rem 1rem;
+    height: 4em; 
+    width: 4em; 
+    top:28.2em; 
+    left: 37.2em; 
+    border-radius: 0 0 1em 1em;
 }
 #knob-heat {
-    z-index: 2rem;
+    z-index: 2em;
     background-color: black;
     opacity:1; 
     position:absolute;
-    top: 23.2rem;
-    left: 79.4rem;
-    width: 1.8rem;
-    height: 1.8rem;
+    top: 23.2em;
+    left: 79.4em;
+    width: 1.8em;
+    height: 1.8em;
     border-radius: 50% 50%;
 }
 
 #knob-stir {
-    z-index: 2rem; 
+    z-index: 2em; 
     background-color: black; 
     opacity:1; 
     position:absolute; 
-    top: 23.2rem; 
-    left: 64.8rem; 
-    width: 1.8rem; 
-    height: 1.8rem; 
+    top: 23.2em; 
+    left: 64.8em; 
+    width: 1.8em; 
+    height: 1.8em; 
     border-radius: 50% 50%;
 }
 
 #rod {
     opacity: 0;
     position: absolute;
-    width: 0.2rem;
-    height: 6rem;
-    border-radius: 0.1rem;
+    width: 0.2em;
+    height: 6em;
+    border-radius: 0.1em;
     transform-origin: 50%  50%;
-    top: 26rem;
-    left: 39rem;
+    top: 26em;
+    left: 39em;
     transform: rotate(20);
     background-color: silver;
 }
 .reset-btn {
     position: absolute; 
-    top: 52rem; 
-    height: 2.2rem; 
+    top: 52em; 
+    height: 2.2em; 
     width: auto; 
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .bottom-space {
     background-color: white; 
     position: absolute; 
-    height: 1rem; 
-    top: 58rem; 
-    width: 90rem;
+    height: 1em; 
+    top: 58em; 
+    width: 90em;
 }
 
 
