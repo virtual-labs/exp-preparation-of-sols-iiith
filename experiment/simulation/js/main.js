@@ -29,8 +29,8 @@ function pour( content ){
         easing: 'linear'
     });
     a1.add({
-        translateX: '8em',
-        translateY: '5em'
+        translateX: '8rem',
+        translateY: '5rem'
     }).add({
         delay: '800',
         rotateZ: '-90'
@@ -50,8 +50,8 @@ function pour( content ){
         easing: 'linear'
     });
     a2.add({
-        translateX: '8em',
-        translateY: '5em'
+        translateX: '8rem',
+        translateY: '5rem'
     }).add({
         delay: '800',
         rotateZ: '-90',
@@ -105,8 +105,8 @@ function addsalt(){
         easing: 'linear'
     });
     a1.add({
-        translateX: '-2.5em',
-        translateY: '5em',
+        translateX: '-2.5rem',
+        translateY: '5rem',
     }).add({
         rotateZ: '-20',
     }).add({
@@ -200,7 +200,7 @@ function dropflask(){
         duration: 1000, 
         easing: 'linear',
     }).add({
-        translateY: '3.6em',
+        translateY: '3.6rem',
     });
 
     var a1 = anime.timeline({
@@ -208,7 +208,7 @@ function dropflask(){
         duration: 800, 
         easing: 'linear',
     }).add({
-        translateY: '3.6em',
+        translateY: '3.6rem',
     });
 
     var a2 = anime.timeline({
@@ -232,7 +232,7 @@ function dropbead(){
         duration: 1200, 
         easing: 'linear',
     }).add({
-        translateY: '7.6em',
+        translateY: '7.6rem',
     }).add({
         update: function(anim) {
             message = messages[6];
@@ -251,9 +251,9 @@ function stir_bead(){
     });
 
     a1.add({
-        width : '0.4em',
+        width : '0.4rem',
         rotateY: '10',
-        translateX: '0.4em'
+        translateX: '0.4rem'
     });
 
     var a2 = anime.timeline({
@@ -319,8 +319,8 @@ function drop_pipette_to_beaker() {
             duration: 1000,
             easing : 'linear',
         }).add({
-            translateY: '6em',
-            translateX: '-14em',
+            translateY: '6rem',
+            translateX: '-14rem',
         }).add({
             update: function(anim) {
                 message = messages[11];
@@ -371,9 +371,9 @@ function pipette_move_to_flask() {
             duration: 1000,
             easing : 'linear',
         }).add({
-            height: '8em',
-            translateX: '17.7em',
-            translateY: '-4em',
+            height: '8rem',
+            translateX: '17.7rem',
+            translateY: '-4rem',
             // opacity: 1
         }).add({
             update: function(anim) {
@@ -402,9 +402,9 @@ function make_sol() {
             duration: 800,
             easing : 'linear',
         }).add({
-            // height: '8em',
-            // translateX: '17.8em',
-            translateY: '6em',
+            // height: '8rem',
+            // translateX: '17.8rem',
+            translateY: '6rem',
             opacity: 0
         });
 
