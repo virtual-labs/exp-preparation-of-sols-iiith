@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset = "utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Add CSS at the head of HTML file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
+    <title>Preparation of Sols</title>
+
 </head>
 <body>
 		<!-- Your code goes here-->
-
+    <div class="container" style=" display: flex; justify-content: center; align-items: center;">
+        <div class="grid">
+            <!-- <div class="row">
+                <h1 class = "title">Preparation of Sols</h1>
+            </div> -->
+            <div class = "row">
+                <div class = "message" id = "message" value="message"></div>
+            </div>
+<!--         </div>
+ -->        <div class = "row">
+            <img id="bench" class = "bench" src="./images/bench.png" alt="Image">
+            <div class = "water" id="water"></div>
+            <img onclick="pour('top-beaker')" id="top-beaker" src="./images/beaker.png" alt="Image">
+            <img onclick="movesalt()" id="salt" src="./images/FeCl3.png" alt="Image">
+            <img onclick="addsalt()" id="fecl3-spoon" src="./images/spoon.png" alt="Image">
+            <img onclick="make_sol(); pipette_move_to_flask(); pipette_fill();drop_pipette_to_beaker();" id="pipette" src="./images/pipette.png" alt="Image">
+            <div id = "water-flask"></div>
+            <div onclick="dropbead()" id="bead"></div>
+            <img onclick="dropflask()" id="conicalflask" src="./images/conicalflask.png" alt="Image">
+            <div id="final-drop"></div>
+        </div>
+        <div class = "row">
+            <img id="flask" src="./images/beaker.png" alt="Image">
+            <div id="water-main-beaker"></div>
+            <div id = "knob-heat" onclick = "heating()"></div>
+            <div id = "knob-stir" onclick="stir_bead()"></div>
+        </div>        
+        <div onclick="stir()" id="rod"></div>
+        <button  class="btn-primary reset-btn" onclick="window.location.reload()">Reset Experiment</button>
+        <div class = "bottom-space"></div>
+    </div>   
+    </div> 
 	<!-- Add JS at the bottom of HTML file --> 
         <script src="./js/main.js"></script>
 </body>
