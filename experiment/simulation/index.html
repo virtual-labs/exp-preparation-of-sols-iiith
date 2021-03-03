@@ -15,16 +15,16 @@
 </head>
 <body>
 		<!-- Your code goes here-->
-    <div class="container justify-content-center" style=" display: flex; justify-content: center; align-items: center;">
+    <div class="container" style=" display: flex; justify-content: center; align-items: center;">
         <div class="grid">
-            <div class="row">
+            <!-- <div class="row">
                 <h1 class = "title">Preparation of Sols</h1>
-            </div>
+            </div> -->
             <div class = "row">
                 <div class = "message" id = "message" value="message"></div>
             </div>
-        </div>
-        <div class = "dropping-objects">
+<!--         </div>
+ -->        <div class = "row">
             <img id="bench" class = "bench" src="./images/bench.png" alt="Image">
             <div class = "water" id="water"></div>
             <img onclick="pour('top-beaker')" id="top-beaker" src="./images/beaker.png" alt="Image">
@@ -36,7 +36,7 @@
             <img onclick="dropflask()" id="conicalflask" src="./images/conicalflask.png" alt="Image">
             <div id="final-drop"></div>
         </div>
-        <div class = "down-objects">
+        <div class = "row">
             <img id="flask" src="./images/beaker.png" alt="Image">
             <div id="water-main-beaker"></div>
             <div id = "knob-heat" onclick = "heating()"></div>
@@ -45,7 +45,8 @@
         <div onclick="stir()" id="rod"></div>
         <button  class="btn-primary reset-btn" onclick="window.location.reload()">Reset Experiment</button>
         <div class = "bottom-space"></div>
-    </div>    
+    </div>   
+    </div> 
 	<!-- Add JS at the bottom of HTML file --> 
         <script src="./js/main.js"></script>
 </body>
