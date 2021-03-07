@@ -1,10 +1,10 @@
 /* You CSS goes in here */
 
-/*.container {
+.container {
     height: 60px;
-    width: 180px;
+/*     width: 180px; */
     position: relative;
-}*/
+}
 
 .title {
     text-align: center;
