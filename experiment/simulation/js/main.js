@@ -1,426 +1,202 @@
-//Your JavaScript goes in here
-var message_flag=0;
-var messages = ["  Click on the beaker to Pour Water.  ", 
-    "  Click on the FeCl3 powder to take a spoon of salt.  ", 
-    "  Click on the spoon to add salt to water.  ", 
-    "  Click on the Glass Rod to stir the FeCl3 solution.  ", 
-    "  Click on the Conical flask containing Water to place it on the Magnetic stirrer/heater.  ", 
-    "  Click on the Magnetic bead to drop it into the Flask.  ", 
-    "  Click on the Heater knob to switch on the Heater.  ", 
-    "  Click on the Stirrer knob to switch on the Magnetic Stirrer.  ", 
-    "  Wait till Water starts boiling...  ", 
-    "  Click on the Heater knob to switch off the Heater.  ", 
-    "  Click on the Pipette to take 10ml of conc. FeCl3 solution.  ", 
-    "  Click on the Pipette again to take 10ml of conc. FeCl3 solution.  ", 
-    "  Click on the Pipette to add the FeCl3 to the hot water in conical flask.  ",
-    "  Click on the Pipette again to add the FeCl3 drop by drop into the conical flask.  ", 
-    "  Fe(OH)3 colloid is obtained...  "]
-var message = messages[0];
-document.getElementById("message").innerHTML = message;
-var knob_heater_flag = 0;
-var pipette_flag = 0;
+/* You CSS goes in here */
 
-function pour( content ){
-    var image = document.getElementById("top-beaker");
-    image.style.pointerEvents = 'none';
-    var a1 = anime.timeline({
-        targets:"#top-beaker",
-        duration: 800,
-        easing: 'linear'
-    });
-    a1.add({
-        translateX: '8rem',
-        translateY: '5rem'
-    }).add({
-        delay: '800',
-        rotateZ: '-90'
-    }).add({
-        update: function(anim) {
-            message = messages[1];
-            document.getElementById("message").innerHTML = message;
-        }
-    }).add({
-        delay: '500',
-        opacity: '0',
-    });
+/*.container {
+    height: 60px;
+    width: 180px;
+    position: relative;
+}*/
 
-    var a2 = anime.timeline({
-        targets:"#water",
-        duration: 800,
-        easing: 'linear'
-    });
-    a2.add({
-        translateX: '8rem',
-        translateY: '5rem'
-    }).add({
-        delay: '800',
-        rotateZ: '-90',
-        opacity: '0',
-    });
-
-    var a3 = anime.timeline({
-        targets:"#water-main-beaker",
-        duration: 800,
-        easing: 'linear',
-    }).add({
-        delay: '1800',
-        opacity: '0.4',
-    });
-    
-    var a4 = anime.timeline({
-        targets:"#salt",
-        duration: 500,
-    }).add({
-        delay: '2500',
-        opacity: '1',
-    });
-
-    var a5 = anime.timeline({
-        targets:"#flask",
-        duration: 400,
-        easing: 'linear',
-    }).add({
-        opacity: 0.4,
-    });
+.title {
+    text-align: center;
+    font-size: 2.5vw;
 }
 
-function movesalt() {
-    var a1 = anime.timeline({
-        targets:"#fecl3-spoon",
-        duration: 1000,
-    }).add({
-        opacity: '1',
-    }).add({
-        update: function(anim) {
-            message = messages[2];
-            document.getElementById("message").innerHTML = message;
-        }
-    });
+.message {
+    text-align: center;
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
 }
 
-function addsalt(){
-    var a1 = anime.timeline({
-        targets:"#fecl3-spoon",
-        duration: 500,
-        easing: 'linear'
-    });
-    a1.add({
-        translateX: '-2.5rem',
-        translateY: '5rem',
-    }).add({
-        rotateZ: '-20',
-    }).add({
-        opacity: '0'
-    });
-
-    var a2 = anime.timeline({
-        targets:"#water-main-beaker",
-        duration: 0, 
-        easing: 'linear',
-    }).add({
-        backgroundColor: '#add8e6',
-        opacity: 0.4,
-    });
-
-    var a3 = anime.timeline({
-        targets:"#water-main-beaker",
-        duration: 1000, 
-        easing: 'linear',
-    }).add({
-        delay: '1000',
-        backgroundColor: '#FF7F00',
-    }).add({
-        update: function(anim) {
-            message = messages[3];
-            document.getElementById("message").innerHTML = message;
-        }
-    });
-
-    var a4 = anime.timeline({
-        duration: 1000, 
-        targets:"#rod",
-        duration: 0, 
-    }).add({
-        delay: '500',
-        opacity: 1,
-    });
+#bench {
+    z-index: -10vw;
+    position: absolute;
+    align-self: center; 
+    object-fit: cover;
+    top: 21vw;
+    width: 78vw;
+    left: 10vw;
 }
 
-function stir() {
-    var a1 = anime.timeline({
-        targets: '#rod',
-        duration: 1000,
-        easing: 'easeInOutSine',
-        direction: 'alternate',
-        loop: 4
-    }).add({
-        opacity: '0.6',
-        rotate: [10, -10],
-    });
-    var t2 = anime.timeline({
-        targets:"#water-main-beaker",
-        duration: 4000, 
-        easing: 'linear',
-    }).add({
-        delay: '500',
-        opacity: '0.6'
-    }).add({
-        update: function(anim) {
-            message = messages[4];
-            document.getElementById("message").innerHTML = message;
-        }
-    }); 
-    var t4 = anime.timeline({
-        targets:'#salt',
-        duration: 500, 
-        easing: 'linear',
-    }).add({
-        opacity: '0'
-    });
-    var t4 = anime.timeline({
-        targets:'#fecl3',
-        duration: 3000, 
-        easing: 'linear',
-    }).add({
-        opacity: '0'
-    });
-    var t5 = anime.timeline({
-        targets:'#conicalflask',
-        duration: 1000, 
-        easing: 'linear',
-    }).add({
-        delay: '4000',
-        opacity: '0.6'
-    });
+#water {
+    opacity: 0.5;
+    position: absolute;
+    top: 17.6vw;
+    height: 4vw;
+    width: 4vw; 
+    left: 33.2vw; 
+    background-color: #add8e6;
+    border-radius: 0 0 1vw 1vw;
 }
 
-function dropflask(){
-    var a1 = anime.timeline({
-        targets:'#conicalflask',
-        duration: 1000, 
-        easing: 'linear',
-    }).add({
-        translateY: '3.6rem',
-    });
-
-    var a1 = anime.timeline({
-        targets:'#water-flask',
-        duration: 800, 
-        easing: 'linear',
-    }).add({
-        translateY: '3.6rem',
-    });
-
-    var a2 = anime.timeline({
-        targets:'#bead',
-        duration: 1000, 
-        easing: 'linear',
-    }).add({
-        delay: '1000',
-        opacity: 1
-    }).add({
-        update: function(anim) {
-            message = messages[5];
-            document.getElementById("message").innerHTML = message;
-        }
-    });
+#top-beaker {
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.4;
+    top: 16vw;
+    left: 32vw;
+    height: 6vw; 
 }
 
-function dropbead(){
-    var a1 = anime.timeline({
-        targets:'#bead',
-        duration: 1200, 
-        easing: 'linear',
-    }).add({
-        translateY: '7.6rem',
-    }).add({
-        update: function(anim) {
-            message = messages[6];
-            document.getElementById("message").innerHTML = message;
-        }
-    });
+#salt {
+    position: absolute;
+    object-fit: cover; 
+    top: 12vw;
+    left: 32vw; 
+    height: 4vw;
+    opacity: 0;
 }
 
-function stir_bead(){
-    var a1 = anime.timeline({
-        targets: "#bead", 
-        duration: 1000,
-        easing : 'linear',
-        loop: true,
-        direction: 'alternate',
-    });
+#fecl3-spoon {
+    position: absolute;
+    object-fit: cover;
+    left:42vw;
+    top: 18vw; 
+    height: 3vw;
+    opacity: 0;
+}
 
-    a1.add({
-        width : '0.4rem',
-        rotateY: '10',
-        translateX: '0.4rem'
-    });
+#pipette {
+    z-index: 1vw;
+    position: absolute;
+    object-fit: cover;
+    top: 11vw;
+    left: 48vw; 
+    height: 13vw;
+    opacity: 0;
+}
 
-    var a2 = anime.timeline({
-        targets: "#water-flask", 
-        duration: 3000,
-        easing : 'linear',
-    }).add({
-        update: function(anim) {
-            message = messages[8];
-            document.getElementById("message").innerHTML = message;
-        }
-    }).add({
-        delay: '3000',
-        update: function(anim) {
-            message = messages[9];
-            document.getElementById("message").innerHTML = message;
-        }
-    });
+#water-flask {
+    height: 0px;
+    width: 3vw;
+    opacity: 0;
+    border-bottom: 2.9vw solid red;
+    border-left: 0.75vw solid transparent;
+    border-right: 0.8vw solid transparent;
+    border-radius: 0% 0% 30% 30%;
+    position: absolute;
+    left: 67.5vw;
+    top: 14.8vw;
+}
 
+#bead {
+    opacity: 0;
+    position: absolute;
+    width: 1.18vw;
+    height: 0.4vw;
+    border-radius: 1vw;
+    object-fit: cover;
+    left: 68.4vw;
+    top: 12vw;
+    background-color: black;
+    transform-origin: 50% 50%;
+}
+
+#conicalflask {
+    position: absolute;
+    object-fit: cover;
+    left: 67vw; 
+    top: 12vw; 
+    height: 6vw; 
+    opacity: 0;
+}
+
+#final-drop {
+    opacity: 0;
+    position: absolute;
+    width: 0.4vw;
+    height: 0.5vw;
+    border-radius: 50% 50% 50% 50%;
+    object-fit: cover;
+    left: 68.8vw;
+    top: 14.6vw;
+    background-color: #FF8C00;
+    transform-origin: 50% 50%;
+}
+
+#flask {
+    z-index: 1vw; 
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.4;
+    height: 6vw; 
+    top: 26.6vw; 
+    left: 36vw ;
+    opacity: 0;
+}
+
+#water-main-beaker {
+    z-index: 1vw;
+    background-color: #add8e6; 
+    opacity: 0; 
+    position: absolute; 
+    height: 4vw; 
+    width: 4vw; 
+    top:28.2vw; 
+    left: 37.2vw; 
+    border-radius: 0 0 1vw 1vw;
+}
+#knob-heat {
+    z-index: 2vw;
+    background-color: black;
+    opacity:1; 
+    position:absolute;
+    top: 23.2vw;
+    left: 79.4vw;
+    width: 1.8vw;
+    height: 1.8vw;
+    border-radius: 50% 50%;
+}
+
+#knob-stir {
+    z-index: 2vw; 
+    background-color: black; 
+    opacity:1; 
+    position:absolute; 
+    top: 23.2vw; 
+    left: 64.8vw; 
+    width: 1.8vw; 
+    height: 1.8vw; 
+    border-radius: 50% 50%;
+}
+
+#rod {
+    opacity: 0;
+    position: absolute;
+    width: 0.2vw;
+    height: 6vw;
+    border-radius: 0.1vw;
+    transform-origin: 50%  50%;
+    top: 26vw;
+    left: 39vw;
+    transform: rotate(20);
+    background-color: silver;
+}
+.reset-btn {
+    position: absolute; 
+    top: 52vw; 
+    height: 2.2vw; 
+    width: auto; 
+    font-size: 1.2vw;
+}
+
+.bottom-space {
+    background-color: white; 
+    position: absolute; 
+    height: 1vw; 
+    top: 58vw; 
+    width: 90vw;
 }
 
 
-function heating() {
-    knob_heater_flag += 1;
-    if(knob_heater_flag == 2) {
-        var a2 = anime.timeline({
-            targets: "#pipette", 
-            duration: 500,
-            easing : 'linear',
-        }).add({
-            delay: '500',
-            opacity: 0.9,
-        }).add({
-            update: function(anim) {
-                message = messages[10];
-                document.getElementById("message").innerHTML = message;
-            }
-        });
-    }
-    else if(knob_heater_flag != 2)
-    {
-        var a1 = anime.timeline({
-            targets: '.message',
-            duration: 1000,
-            easing: 'linear'
-        }).add({
-            update: function(anim) {
-                message = messages[7];
-                document.getElementById("message").innerHTML = message;
-            }
-        });
-    }
-}
 
-function drop_pipette_to_beaker() {
-
-    console.log('pipette flag= ');
-    console.log(pipette_flag);
-    if(pipette_flag == 0)
-    {
-        var a1 = anime.timeline({
-            targets: "#pipette", 
-            duration: 1000,
-            easing : 'linear',
-        }).add({
-            translateY: '6rem',
-            translateX: '-14rem',
-        }).add({
-            update: function(anim) {
-                message = messages[11];
-                document.getElementById("message").innerHTML = message;
-            }
-        });
-
-        // var a2 = anime.timeline({
-        //     targets: "#water-main-beaker", 
-        //     duration: 2000,
-        //     easing : 'easeInOutQuad',
-        // }).add({
-        //     delay: '1000',
-        //     opacity: 0,
-        // });
-        pipette_flag = 2;
-    }
-}
-
-function pipette_fill() {
-    console.log('pipette flag= ');
-    console.log(pipette_flag);
-    if (pipette_flag == 2)
-    {
-        console.log('taking out water');
-        var a2 = anime.timeline({
-            targets: "#water-main-beaker", 
-            duration: 2000,
-            easing : 'easeInOutQuad',
-        }).add({
-            delay: '1000',
-            opacity: 0,
-        }).add({
-            update: function(anim) {
-                message = messages[12];
-                document.getElementById("message").innerHTML = message;
-            }
-        });
-        pipette_flag = 3;
-    }
-}
-
-function pipette_move_to_flask() {
-    if(pipette_flag == 3)
-    {
-        var a1 = anime.timeline({
-            targets: "#pipette", 
-            duration: 1000,
-            easing : 'linear',
-        }).add({
-            height: '8rem',
-            translateX: '17.7rem',
-            translateY: '-4rem',
-            // opacity: 1
-        }).add({
-            update: function(anim) {
-                message = messages[13];
-                document.getElementById("message").innerHTML = message;
-            }
-        });
-
-        var a2 = anime.timeline({
-            targets: "#final-drop", 
-            duration: 200,
-            easing : 'linear',
-        }).add({
-            delay: '1000',
-            opacity: 1,
-        });
-        pipette_flag = 4;
-    }
-}
-
-function make_sol() {
-    if(pipette_flag==4)
-    {
-        var a1 = anime.timeline({
-            targets: "#final-drop", 
-            duration: 800,
-            easing : 'linear',
-        }).add({
-            // height: '8rem',
-            // translateX: '17.8rem',
-            translateY: '6rem',
-            opacity: 0
-        });
-
-        var a2 = anime.timeline({
-            targets: "#water-flask", 
-            duration: 2000,
-            easing : 'linear',
-        }).add({
-            delay: '1000',
-            opacity: 0.8,
-        }).add({
-            update: function(anim) {
-                message = messages[14];
-                document.getElementById("message").innerHTML = message;
-            }
-        });
-        pipette_flag = 5;
-    }
-}
