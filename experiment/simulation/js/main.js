@@ -29,8 +29,8 @@ function pour( content ){
         easing: 'linear'
     });
     a1.add({
-        translateX: '8vw',
-        translateY: '5vw'
+        translateX: '8vh',
+        translateY: '5vh'
     }).add({
         delay: '800',
         rotateZ: '-90'
@@ -50,8 +50,8 @@ function pour( content ){
         easing: 'linear'
     });
     a2.add({
-        translateX: '8vw',
-        translateY: '5vw'
+        translateX: '8vh',
+        translateY: '5vh'
     }).add({
         delay: '800',
         rotateZ: '-90',
@@ -105,8 +105,8 @@ function addsalt(){
         easing: 'linear'
     });
     a1.add({
-        translateX: '-2.5vw',
-        translateY: '5vw',
+        translateX: '-2.5vh',
+        translateY: '5vh',
     }).add({
         rotateZ: '-20',
     }).add({
@@ -200,7 +200,7 @@ function dropflask(){
         duration: 1000, 
         easing: 'linear',
     }).add({
-        translateY: '3.6vw',
+        translateY: '3.6vh',
     });
 
     var a1 = anime.timeline({
@@ -208,7 +208,7 @@ function dropflask(){
         duration: 800, 
         easing: 'linear',
     }).add({
-        translateY: '3.6vw',
+        translateY: '3.6vh',
     });
 
     var a2 = anime.timeline({
@@ -232,7 +232,7 @@ function dropbead(){
         duration: 1200, 
         easing: 'linear',
     }).add({
-        translateY: '7.6vw',
+        translateY: '7.6vh',
     }).add({
         update: function(anim) {
             message = messages[6];
@@ -251,9 +251,9 @@ function stir_bead(){
     });
 
     a1.add({
-        width : '0.4vw',
+        width : '0.4vh',
         rotateY: '10',
-        translateX: '0.4vw'
+        translateX: '0.4vh'
     });
 
     var a2 = anime.timeline({
@@ -319,8 +319,8 @@ function drop_pipette_to_beaker() {
             duration: 1000,
             easing : 'linear',
         }).add({
-            translateY: '6vw',
-            translateX: '-14vw',
+            translateY: '6vh',
+            translateX: '-14vh',
         }).add({
             update: function(anim) {
                 message = messages[11];
@@ -371,9 +371,9 @@ function pipette_move_to_flask() {
             duration: 1000,
             easing : 'linear',
         }).add({
-            height: '8vw',
-            translateX: '17.7vw',
-            translateY: '-4vw',
+            height: '8vh',
+            translateX: '17.7vh',
+            translateY: '-4vh',
             // opacity: 1
         }).add({
             update: function(anim) {
@@ -402,9 +402,9 @@ function make_sol() {
             duration: 800,
             easing : 'linear',
         }).add({
-            // height: '8vw',
-            // translateX: '17.8vw',
-            translateY: '6vw',
+            // height: '8vh',
+            // translateX: '17.8vh',
+            translateY: '6vh',
             opacity: 0
         });
 
