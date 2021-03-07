@@ -8,96 +8,96 @@
 
 .title {
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vh;
 }
 
 .message {
     text-align: center;
     background-color: yellow;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.8vh;
 }
 
 #bench {
-    z-index: -10vw;
+    z-index: -10vh;
     position: absolute;
     align-self: center; 
     object-fit: cover;
-    top: 21vw;
-    width: 78vw;
-    left: 10vw;
+    top: 21vh;
+    width: 78vh;
+    left: 10vh;
 }
 
 #water {
     opacity: 0.5;
     position: absolute;
-    top: 17.6vw;
-    height: 4vw;
-    width: 4vw; 
-    left: 33.2vw; 
+    top: 17.6vh;
+    height: 4vh;
+    width: 4vh; 
+    left: 33.2vh; 
     background-color: #add8e6;
-    border-radius: 0 0 1vw 1vw;
+    border-radius: 0 0 1vh 1vh;
 }
 
 #top-beaker {
     position: absolute;
     object-fit: cover;
     opacity: 0.4;
-    top: 16vw;
-    left: 32vw;
-    height: 6vw; 
+    top: 16vh;
+    left: 32vh;
+    height: 6vh; 
 }
 
 #salt {
     position: absolute;
     object-fit: cover; 
-    top: 12vw;
-    left: 32vw; 
-    height: 4vw;
+    top: 12vh;
+    left: 32vh; 
+    height: 4vh;
     opacity: 0;
 }
 
 #fecl3-spoon {
     position: absolute;
     object-fit: cover;
-    left:42vw;
-    top: 18vw; 
-    height: 3vw;
+    left:42vh;
+    top: 18vh; 
+    height: 3vh;
     opacity: 0;
 }
 
 #pipette {
-    z-index: 1vw;
+    z-index: 1vh;
     position: absolute;
     object-fit: cover;
-    top: 11vw;
-    left: 48vw; 
-    height: 13vw;
+    top: 11vh;
+    left: 48vh; 
+    height: 13vh;
     opacity: 0;
 }
 
 #water-flask {
     height: 0px;
-    width: 3vw;
+    width: 3vh;
     opacity: 0;
-    border-bottom: 2.9vw solid red;
-    border-left: 0.75vw solid transparent;
-    border-right: 0.8vw solid transparent;
+    border-bottom: 2.9vh solid red;
+    border-left: 0.75vh solid transparent;
+    border-right: 0.8vh solid transparent;
     border-radius: 0% 0% 30% 30%;
     position: absolute;
-    left: 67.5vw;
-    top: 14.8vw;
+    left: 67.5vh;
+    top: 14.8vh;
 }
 
 #bead {
     opacity: 0;
     position: absolute;
-    width: 1.18vw;
-    height: 0.4vw;
-    border-radius: 1vw;
+    width: 1.18vh;
+    height: 0.4vh;
+    border-radius: 1vh;
     object-fit: cover;
-    left: 68.4vw;
-    top: 12vw;
+    left: 68.4vh;
+    top: 12vh;
     background-color: black;
     transform-origin: 50% 50%;
 }
@@ -105,97 +105,97 @@
 #conicalflask {
     position: absolute;
     object-fit: cover;
-    left: 67vw; 
-    top: 12vw; 
-    height: 6vw; 
+    left: 67vh; 
+    top: 12vh; 
+    height: 6vh; 
     opacity: 0;
 }
 
 #final-drop {
     opacity: 0;
     position: absolute;
-    width: 0.4vw;
-    height: 0.5vw;
+    width: 0.4vh;
+    height: 0.5vh;
     border-radius: 50% 50% 50% 50%;
     object-fit: cover;
-    left: 68.8vw;
-    top: 14.6vw;
+    left: 68.8vh;
+    top: 14.6vh;
     background-color: #FF8C00;
     transform-origin: 50% 50%;
 }
 
 #flask {
-    z-index: 1vw; 
+    z-index: 1vh; 
     position: absolute;
     object-fit: cover;
     opacity: 0.4;
-    height: 6vw; 
-    top: 26.6vw; 
-    left: 36vw ;
+    height: 6vh; 
+    top: 26.6vh; 
+    left: 36vh ;
     opacity: 0;
 }
 
 #water-main-beaker {
-    z-index: 1vw;
+    z-index: 1vh;
     background-color: #add8e6; 
     opacity: 0; 
     position: absolute; 
-    height: 4vw; 
-    width: 4vw; 
-    top:28.2vw; 
-    left: 37.2vw; 
-    border-radius: 0 0 1vw 1vw;
+    height: 4vh; 
+    width: 4vh; 
+    top:28.2vh; 
+    left: 37.2vh; 
+    border-radius: 0 0 1vh 1vh;
 }
 #knob-heat {
-    z-index: 2vw;
+    z-index: 2vh;
     background-color: black;
     opacity:1; 
     position:absolute;
-    top: 23.2vw;
-    left: 79.4vw;
-    width: 1.8vw;
-    height: 1.8vw;
+    top: 23.2vh;
+    left: 79.4vh;
+    width: 1.8vh;
+    height: 1.8vh;
     border-radius: 50% 50%;
 }
 
 #knob-stir {
-    z-index: 2vw; 
+    z-index: 2vh; 
     background-color: black; 
     opacity:1; 
     position:absolute; 
-    top: 23.2vw; 
-    left: 64.8vw; 
-    width: 1.8vw; 
-    height: 1.8vw; 
+    top: 23.2vh; 
+    left: 64.8vh; 
+    width: 1.8vh; 
+    height: 1.8vh; 
     border-radius: 50% 50%;
 }
 
 #rod {
     opacity: 0;
     position: absolute;
-    width: 0.2vw;
-    height: 6vw;
-    border-radius: 0.1vw;
+    width: 0.2vh;
+    height: 6vh;
+    border-radius: 0.1vh;
     transform-origin: 50%  50%;
-    top: 26vw;
-    left: 39vw;
+    top: 26vh;
+    left: 39vh;
     transform: rotate(20);
     background-color: silver;
 }
 .reset-btn {
     position: absolute; 
-    top: 52vw; 
-    height: 2.2vw; 
+    top: 52vh; 
+    height: 2.2vh; 
     width: auto; 
-    font-size: 1.2vw;
+    font-size: 1.2vh;
 }
 
 .bottom-space {
     background-color: white; 
     position: absolute; 
-    height: 1vw; 
-    top: 58vw; 
-    width: 90vw;
+    height: 1vh; 
+    top: 58vh; 
+    width: 90vh;
 }
 
 
