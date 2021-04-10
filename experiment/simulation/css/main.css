@@ -185,18 +185,19 @@
 .reset-btn {
     position: absolute; 
     top: 52vw; 
+    left: 46vw;
     height: 2.2vw; 
     width: auto; 
     font-size: 1.2vw;
 }
 
-.bottom-space {
+/* .bottom-space {
     background-color: white; 
     position: absolute; 
     height: 1vw; 
     top: 58vw; 
     width: 90vw;
 }
-
+ */
 
 
