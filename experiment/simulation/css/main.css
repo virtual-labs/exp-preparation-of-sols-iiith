@@ -1,11 +1,5 @@
 /* You CSS goes in here */
 
-/*.container {
-    height: 60px;
-    width: 180px;
-    position: relative;
-}*/
-
 .title {
     text-align: center;
     font-size: 2.5vw;
@@ -13,7 +7,7 @@
 
 .message {
     text-align: center;
-    background-color: yellow;
+    background-color: #ffff00;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8vw;
 }
@@ -80,7 +74,7 @@
     height: 0px;
     width: 3vw;
     opacity: 0;
-    border-bottom: 2.9vw solid red;
+    border-bottom: 2.9vw solid #ff0000;
     border-left: 0.75vw solid transparent;
     border-right: 0.8vw solid transparent;
     border-radius: 0% 0% 30% 30%;
@@ -98,7 +92,7 @@
     object-fit: cover;
     left: 68.4vw;
     top: 12vw;
-    background-color: black;
+    background-color: #000000;
     transform-origin: 50% 50%;
 }
 
@@ -148,7 +142,7 @@
 }
 #knob-heat {
     z-index: 2vw;
-    background-color: black;
+    background-color: #000000;
     opacity:1; 
     position:absolute;
     top: 23.2vw;
@@ -160,7 +154,7 @@
 
 #knob-stir {
     z-index: 2vw; 
-    background-color: black; 
+    background-color: #000000; 
     opacity:1; 
     position:absolute; 
     top: 23.2vw; 
@@ -180,7 +174,7 @@
     top: 26vw;
     left: 39vw;
     transform: rotate(20);
-    background-color: silver;
+    background-color: #c0c0c0;
 }
 .reset-btn {
     position: absolute; 
@@ -191,13 +185,5 @@
     font-size: 1.2vw;
 }
 
-/* .bottom-space {
-    background-color: white; 
-    position: absolute; 
-    height: 1vw; 
-    top: 58vw; 
-    width: 90vw;
-}
- */
 
 
