@@ -21,6 +21,12 @@ let message = messages[0];
 document.getElementById("message").innerHTML = message;
 let knob_heater_flag = 0; // turn-on or turn-off the heater
 let pipette_flag = 0; // handles the movement of pipette
+// pipette_flag guide:
+// 0 - no animation of pipette
+// 1 - filling of pipette with solution
+// 2 - motion of pipette to flask
+// 3 - dropping solution from pipette into flask
+// 4 - signifies end state
 
 function pour() {
     const image = document.getElementById("top-beaker");
