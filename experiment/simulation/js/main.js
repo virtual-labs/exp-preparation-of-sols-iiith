@@ -29,8 +29,6 @@ let pipette_flag = 0; // handles the movement of pipette
 // 4 - signifies end state
 
 function pour() {
-    const image = document.getElementById("top-beaker");
-    image.style.pointerEvents = 'none';
     const animation_1 = anime.timeline({
         targets: "#top-beaker",
         duration: 800,
