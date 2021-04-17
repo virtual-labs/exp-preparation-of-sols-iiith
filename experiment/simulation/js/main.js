@@ -41,7 +41,7 @@ function pour() {
         delay: '800',
         rotateZ: '-90'
     }).add({
-        update: function(anim) {
+        update: function() {
             message = messages[1];
             document.getElementById("message").innerHTML = message;
         }
