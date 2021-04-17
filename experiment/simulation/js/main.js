@@ -86,7 +86,7 @@ function pour() {
         duration: 400,
         easing: 'linear',
     }).add({
-        opacity: 0.4,
+        opacity: '0.4',
     });
 }
 
@@ -125,7 +125,7 @@ function addsalt() {
         easing: 'linear',
     }).add({
         backgroundColor: '#add8e6',
-        opacity: 0.4,
+        opacity: '0.4',
     });
 
     const animation_3 = anime.timeline({
@@ -148,7 +148,7 @@ function addsalt() {
         duration: 0,
     }).add({
         delay: '500',
-        opacity: 1,
+        opacity: '1',
     });
 }
 
@@ -223,7 +223,7 @@ function dropflask() {
         easing: 'linear',
     }).add({
         delay: '1000',
-        opacity: 1
+        opacity: '1'
     }).add({
         update: function() {
             message = messages[5];
@@ -291,7 +291,7 @@ function heating() {
             easing: 'linear',
         }).add({
             delay: '500',
-            opacity: 0.9,
+            opacity: '0.9',
         }).add({
             update: function() {
                 message = messages[10];
@@ -340,7 +340,7 @@ function pipette_fill() {
             easing: 'easeInOutQuad',
         }).add({
             delay: '1000',
-            opacity: 0,
+            opacity: '0',
         }).add({
             update: function() {
                 message = messages[12];
@@ -374,7 +374,7 @@ function pipette_move_to_flask() {
             easing: 'linear',
         }).add({
             delay: '1000',
-            opacity: 1,
+            opacity: '1',
         });
         pipette_flag = 3;
     }
@@ -388,7 +388,7 @@ function make_sol() {
             easing: 'linear',
         }).add({
             translateY: '6vw',
-            opacity: 0
+            opacity: '0'
         });
 
         const animation_2 = anime.timeline({
@@ -397,7 +397,7 @@ function make_sol() {
             easing: 'linear',
         }).add({
             delay: '1000',
-            opacity: 0.8,
+            opacity: '0.8',
         }).add({
             update: function() {
                 message = messages[14];
