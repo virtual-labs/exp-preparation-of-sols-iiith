@@ -1,5 +1,6 @@
 **To start the experiment do the following:**
 
+
 1. Prepare about 20 mL of a concentrated FeCl3.6H2O solution (by dissolving it in about three times its volume of deionized water). 
 2.  Take a 1 L conical flask (by clicking on it) and pour about 500 mL of deionized water in the flask.  
 3.  Place the beaker on a magnetic stirrer-cum-heater.  
